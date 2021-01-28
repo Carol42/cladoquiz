@@ -18,7 +18,17 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.3;
+  }
+
+  a{
+    color: #98FB98;
+    text-decoration: none;
+    transition: .3s;
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
   }
 `;
 

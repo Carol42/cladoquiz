@@ -28,12 +28,20 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-      <Widget>
+        <a href="https://fontmeme.com/fontes/fonte-sherlock/"><img src="https://fontmeme.com/permalink/210127/4fb223cb38fa5db854dbf90f9843dc2d.png" alt="logo cladoquiz" border="0" /></a>
+        <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
+            <p>{db.description}
+            {' '}
+            Ótima aula sobre o assunto
+            {' '}
+              <a href="https://www.youtube.com/watch?v=SAoFkZczm2Y&t=2294s&ab_channel=CanaldoPirulla">
+                <span>aqui.</span>
+              </a>
+            </p>
           </Widget.Content>
         </Widget>
 
@@ -46,8 +54,8 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/Carol42" />
+      <GitHubCorner projectUrl="https://github.com/Carol42/cladoquiz" />
     </QuizBackground>
- 
+
   );
 }

@@ -12,15 +12,13 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
   a {
-    color: white;
     text-decoration: none;
     transition: .3s;
+    color: #3CB371;
+    text-decoration: none;
     &:hover,
     &:focus {
       opacity: .5;
-    }
-    span {
-      text-decoration: underline;
     }
   }
 `;
@@ -33,7 +31,13 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
+        Criado por 
+        {' '}
+        <a href="https://www.linkedin.com/in/caroline-oliveira-86059b109/">
+          <span>Caroline H Oliveira</span>
+        </a>
+        {' '}
+        durante
         {' '}
         a
         {' '}
