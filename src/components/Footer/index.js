@@ -35,7 +35,7 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Criado por 
+      &#169;2021 Criado por 
         {' '}
         <a href="https://www.linkedin.com/in/caroline-oliveira-86059b109/">
           <span>Caroline H Oliveira</span>

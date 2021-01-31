@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import db from '../db.json';
 import Widget from '../src/components/Widget'
 import { useRouter } from 'next/router';
@@ -41,7 +42,16 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 1 }}
+          variants={{
+            show: { opacity: 1, x: '0' },
+            hidden: { opacity: 0, x: '-100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -66,15 +76,28 @@ export default function Home() {
                 placeholder="Digite seu nome"
                 value={name}
               />
-            <Button type="submit" disabled={name.length === 0}>
+            <Button type="submit" disabled={name.length === 0}
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
                 {`Jogar`}
+                
               </Button>
             </form>
           </Widget.Content>
         </Widget>
 
-        <Widget>
-          <Widget.Content>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 1 }}
+          variants={{
+            show: { opacity: 1, x: '0' },
+            hidden: { opacity: 0, x: '-100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >          <Widget.Content>
             <h1>Quizes da Galera</h1>
 
             <ul>
@@ -100,8 +123,16 @@ export default function Home() {
           </Widget.Content>
         </Widget>
       </QuizContainer>
-        <Footer />
-      <GitHubCorner projectUrl="https://github.com/Carol42/cladoquiz" />
+      <Footer
+          as={motion.footer}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />      <GitHubCorner projectUrl="https://github.com/Carol42/cladoquiz" />
     </QuizBackground>
 
   );

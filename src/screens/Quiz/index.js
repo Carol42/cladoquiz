@@ -1,5 +1,8 @@
 import React from 'react';
+import { Lottie } from '@crello/react-lottie';
 import db from '../../../db.json';
+import { motion } from 'framer-motion';
+
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -8,13 +11,25 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
+import loadingAnimation from './animations/loading.json';
+
+
 function ResultWidget({ results }) {
   return (
     <div>
-      <Widget>
+      <Widget
+      as={motion.section}
+      transition={{ delay: 0, duration: 1 }}
+      variants={{
+        show: { opacity: 1, x: '0' },
+        hidden: { opacity: 0, x: '-100%' },
+      }}
+      initial="hidden"
+      animate="show"
+      >
         <Widget.Header>
           Obrigada por jogar! :)
-      </Widget.Header>
+        </Widget.Header>
 
         <Widget.Content>
           <p>
@@ -45,20 +60,29 @@ function ResultWidget({ results }) {
           </ul>
         </Widget.Content>
       </Widget>
-      <Widget.Curiosidade>
-      <Widget.Content>
-        <h2>Curiosidade para os memeiros de plantão</h2>
+      <Widget.Curiosidade
+      as={motion.section}
+      transition={{ delay: 0.5, duration: 1 }}
+      variants={{
+        show: { opacity: 1, x: '0' },
+        hidden: { opacity: 0, x: '-100%' },
+      }}
+      initial="hidden"
+      animate="show"
+      >
+        <Widget.Content>
+          <h2>Curiosidade para os memeiros de plantão</h2>
 
-        <p>Vocês sabem da origem deste termo?</p>
-        <p> 
-        A palavra meme foi cunhada por Richard Dawkins, no seu livro O Gene Egoísta como uma tentativa de explicar como ideias se multiplicam, mudam e evoluem.
-        Exemplos de memes são tons, ideias, bordões, roupas da moda, maneiras de fazer potes ou construir arcos. Da mesma forma que genes se propagam pulando de corpo em corpo através de espermas e óvulos, memes se propagam pulando de cérebro em cérebro em um processo que, em um sentido amplo, pode ser chamado de imitação.
+          <p>Vocês sabem da origem deste termo?</p>
+          <p>
+            A palavra meme foi cunhada por Richard Dawkins, no seu livro O Gene Egoísta como uma tentativa de explicar como ideias se multiplicam, mudam e evoluem.
+            Exemplos de memes são tons, ideias, bordões, roupas da moda, maneiras de fazer potes ou construir arcos. Da mesma forma que genes se propagam pulando de corpo em corpo através de espermas e óvulos, memes se propagam pulando de cérebro em cérebro em um processo que, em um sentido amplo, pode ser chamado de imitação.
         </p>
-        <p>
-        Então da próxima vez que for compartilhar um meme, lembre-se que você está aplicando pressão seletiva nos memes da mesma forma que o ambiente pressiona os seres vivos de acordo com a teoria evolutiva proposta por Charles Darwin ;)
+          <p>
+            Então da próxima vez que for compartilhar um meme, lembre-se que você está aplicando pressão seletiva nos memes da mesma forma que o ambiente pressiona os seres vivos de acordo com a teoria evolutiva proposta por Charles Darwin ;)
         </p>
         </Widget.Content>
-    </Widget.Curiosidade>
+      </Widget.Curiosidade>
     </div>
   );
 }
@@ -69,9 +93,15 @@ function LoadingWidget() {
       <Widget.Header>
         Sintetizando proteínas...
       </Widget.Header>
-
+      <Lottie
+          background="transparent"
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       <Widget.Content>
-        <img src="https://cdn.dribbble.com/users/514343/screenshots/5838563/dna.gif" width="100%" />
+      
       </Widget.Content>
     </Widget>
   );
@@ -91,7 +121,16 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, x: '0' },
+            hidden: { opacity: 0, x: '-100%' },
+          }}
+          initial="hidden"
+          animate="show"
+    >
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>
@@ -139,6 +178,8 @@ function QuestionWidget({
                 htmlFor={alternativeId}
                 data-selected={isSelected}
                 data-status={isQuestionSubmited && alternativeStatus}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 <input
                   style={{ display: 'none' }}
@@ -155,11 +196,14 @@ function QuestionWidget({
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
-          <Button type="submit" disabled={!hasAlternativeSelected}>
+          <Button type="submit" disabled={!hasAlternativeSelected}
+          as={motion.button}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}>
             Confirmar
           </Button>
           {isQuestionSubmited && isCorrect && <p>Você acertou! Parabéns!</p>}
-        {isQuestionSubmited && !isCorrect && <p>Você errou! A resposta certa é " { question.alternatives[question.answer] } "</p>}
+          {isQuestionSubmited && !isCorrect && <p>Você errou! A resposta certa é " {question.alternatives[question.answer]} "</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
