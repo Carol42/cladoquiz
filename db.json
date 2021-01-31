@@ -3,40 +3,126 @@
     "title": "Um quiz sobre Cladística",
     "description": "Teste os seus conhecimentos sobre Cladística.",
     "questions": [
+      
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+          "image": "https://media.giphy.com/media/o37e1VlwzOvFS/giphy.gif",
+          "title": "Na Biologia é correto afirmar que um ser vivo é mais evoluído do que outro.",
+          "description": "Essa é pra aquecer",
+          "answer": 1,
+          "alternatives": [
+             "Verdadeiro",
+             "Falso"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/T8ZP9P7efQ8cE/giphy.gif",
+          "title": "Qual dos seguintes fatores NÃO é imprescindível para que a Seleção Natural ocorra?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+             "Variedade entre indivíduos",
+             "Fatores ambientais que interfiram nos indivíduos",
+             "Seleção, que beneficie mais uns do que outros",
+             "A presença de DNA ou RNA",
+             "Hereditariedade"
+          ]
+        },
+      { 
+        "image": "https://media.giphy.com/media/3o7bu3XPZAiKKZ3xRK/giphy.gif",
+        "title": "O nome que se dá ao caráter derivado, a novidade evolutiva no grupo e que são buscados em análises de parentesco:",
+        "description": "",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Plesiomorfia",
+          "Apomorfia",
+          "Anagênese",
+          "Cladogênese"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/P1PemPnyp4g1i/giphy.gif",
+        "title": " Como exemplo de estruturas análogas podemos citar:",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "O corpo fusiforme em tubarões e golfinhos",
+           "As folhas de uma planta carnívora e as folhas de um cacto",
+           "Os braços humanos e as asas de um pássaro"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/MU34i4dQnZVzV1UPbG/giphy.gif",
+        "title": " O que é uma homologia?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "O nome dado às enormes tabelas feitas pelos fenéticos.",
+           "Uma característica presente em dois grupos distintos de organismos que possui uma mesma origem embriológica, relacionada a um ancestral em comum, sendo uma sinapomorfia do grupo.",
+           "Um caráter que já estava presente no ancestral e que continua nas linhagens seguintes.",
+           "O fenômeno que ocorre quando o isolamento reprodutivo entre populações de uma mesma espécie, com o passar do tempo, gera novas espécies."
+        ]
+      },
+      {
+        "image": "https://www.vestibulandoweb.com.br/educacao/wp-content/uploads/2019/02/questao-cladogramas-ufu-2011.png",
+        "title": "(UFU/2011) Observe a árvore filogenética acima.",
+        "description": "Espera-se encontrar maior semelhança entre os genes de",
+        "answer": 0,
+        "alternatives": [
+           "baleia e pássaro.",
+           "bactéria e protozoário.",
+           "estrela-do-mar e ostra.",
+           "ostra e coral."
+        ]
+      },
+      {
+        "image": "https://www.vestibulandoweb.com.br/educacao/wp-content/uploads/2019/02/Questao-cladograma-Fatec-2017-2.png",
+        "title": "(FATEC/2017.2) A afirmação “os humanos descendem dos chimpanzés” é contrariada pelo cladograma apresentado, segundo o qual",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "os chimpanzés são humanos menos evoluídos.",
+           "os gorilas, os chimpanzés e os humanos descendem, sequencialmente, dos gibões.",
+           "os gibões, os gorilas e os chimpanzés descendem da linha evolutiva dos humano",
+           "os humanos e os chimpanzés descendem de um ancestral comum exclusivo.",
+           "os chimpanzés são mais aparentados aos gorilas que aos humanos"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/58e6d4e39d26b16a03c645235253ceea/tumblr_n00qwea8dk1snzwjto1_1280.gif",
+        "title": "Marque a alternativa incorreta:",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "A cladística busca reunir, em um mesmo grupo, grupos de organismo que possuem história evolutiva em comum.",
+           "Organismos com história evolutiva em comum apresentam apomorfias, ou seja: características derivadas, ausentes no ancestral de ambas.",
+           "Plesiomorfias podem ser consideradas novidades evolutivas.",
+           "Plesiomorfias dizem respeito a características primitivas, encontradas no ancestral e nas espécies atuais."
+        ]
+      },
+{
+        "image": "https://www.humorcomciencia.com/wp-content/uploads/2014/02/evolu%C3%A7%C3%A3o.gif",
+        "title": "Grupos monofiléticos também são chamados de grupos naturais e incluem um ancestral comum e TODOS os descendentes.",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Verdadeiro",
+           "Falso"
         ]
       }
     ],
     "external": [
-      ""
-    ],
-    "theme": {
-      "colors": {
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+        ],
+
+        "theme": {
+        "colors": {
         "primary": "#4caf50",
         "secondary": "#ff9100",
         "mainBg": "#357a38",
         "contrastText": "#F5F5F5",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#32CD32"
       },
       "borderRadius": "4px"
     }

@@ -6,7 +6,10 @@ const FooterWrapper = styled.footer`
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 4px; 
+  position: relative;
+
   img {
     width: 58px;
     margin-right: 23px;
@@ -15,6 +18,7 @@ const FooterWrapper = styled.footer`
     text-decoration: none;
     transition: .3s;
     color: #3CB371;
+    font-size: 16px;
     text-decoration: none;
     &:hover,
     &:focus {
