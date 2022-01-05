@@ -1,3 +1,4 @@
+<div id="topo"></div>
 <h1 align="center">
     <img src="./src/img/cladoquiz-logo.png" alt="cladoquiz logo">
 </h1>
