@@ -12,6 +12,7 @@
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Carol42/cladoquiz?color=181717&logo=github&style=plastic&logoColor=181717">
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Carol42/cladoquiz?color=%23F7DF1E&logo=javascript&style=plastic">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Carol42/cladoquiz?color=F05032&logo=git&logoColor&style=plastic">
+<img alt="date created" src="https://badges.pufler.dev/created/Carol42/cladoquiz?style=plastic&color=2D551F">
 <img src="https://img.shields.io/static/v1?label=✔ status&message=concluído&color=2D551F&style=plastic&logo=" alt="status: concluído"/>
 </div>
 
