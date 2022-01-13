@@ -1,6 +1,6 @@
 <div id="topo"></div>
 <h1 align="center">
-    <img src="./src/img/cladoquiz-logo.png" alt="cladoquiz logo">
+    <img src="https://github.com/Carol42/cladoquiz/blob/main/src/img/cladoquiz-logo.png" alt="cladoquiz logo">
 </h1>
 
 <h2 align='center'>Um quiz sobre o estudo das relações de parentesco dos seres vivos</h2>
@@ -22,9 +22,11 @@
 </h3>
 <h3 align="center">:link: <a href="https://github.com/Carol42/Disnil">Acessar meu 2º projeto inspirado na Imersão React 1ª edição</a>
 </h3>
-<h4 align="center">:us::gb: <a href="./README-en.md">Go to the English version of this README »</a>
-</h4>
-
+<!--<h4 align="center">:us::gb: <a href="./README-en.md">Go to the English version of this README »</a></h4>-->
+<table align="right">
+ <tr><td><a href="https://github.com/Carol42/cladoquiz/blob/main/README-en.md">:us: English</a></td></tr>
+ <tr><td><a href="https://github.com/Carol42/cladoquiz/blob/main/README.md">:brazil: Português</a></td></tr>
+</table>
 <details>
     <summary>Sumário</summary>
     <ol>
@@ -45,7 +47,7 @@ Esse projeto consiste em um quiz sobre Cladística: a ferramenta mais utilizada 
 Foi desenvolvido durante a #ImersãoReact 2ª edição da #Alura
 
 <div align="center">
-    <img src="./src/img/screenshot-1.png" width="80%" alt="screenshot da aplicação">
+    <img src="https://github.com/Carol42/cladoquiz/blob/main/src/img/screenshot-1.png" width="80%" alt="screenshot da aplicação">
 </div>
 
 <p align="right"><a href="#topo"><img src="https://img.shields.io/static/v1?label&message=voltar ao topo&color=2D551F&style=flat&logo" alt="voltar ao topo" /></a></p>
