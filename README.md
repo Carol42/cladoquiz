@@ -46,6 +46,8 @@ Esse projeto consiste em um quiz sobre Cladística: a ferramenta mais utilizada 
 
 Foi desenvolvido durante a #ImersãoReact 2ª edição da #Alura
 
+Você pode ver todos os quizes criados na [Vitrine da Imersão](https://aluraquiz-base-alura-challenges.vercel.app/contribuidores).
+
 <div align="center">
     <img src="https://github.com/Carol42/cladoquiz/blob/main/src/img/screenshot-1.png" width="80%" alt="screenshot da aplicação">
 </div>
