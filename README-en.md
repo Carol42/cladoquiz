@@ -46,6 +46,8 @@ This project is a quiz about Cladistics: the tool that is most used by scientist
 
 It was developed during the 2<sup>nd</sup> ImersãoReact organized by Alura.
 
+All quizes can be seen on the [Vitrine da Imersão](Você pode ver todos os quizes criados na Vitrine da Imersão.).
+
 <div align="center">
     <img src="https://github.com/Carol42/cladoquiz/blob/main/src/img/screenshot-1.png" width="80%" alt="screenshot of the app">
 </div>
